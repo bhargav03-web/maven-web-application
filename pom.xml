@@ -21,7 +21,7 @@
 		<spring.version>5.1.2.RELEASE</spring.version>
 		<junit.version>4.11</junit.version>
 		<log4j.version>1.2.17</log4j.version>
-		<sonar.host.url>http://3.90.205.91:9000/</sonar.host.url>
+		<sonar.host.url>http://54.209.214.53:9000/</sonar.host.url>
                 <sonar.login>f16493954ac0ff36a00c9f849cbeecb0d96c923a</sonar.login>
 		
              
@@ -99,13 +99,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Releases Nexus Repository</name>
-	      <url>http://3.86.105.207:8081/repository/wallmart-releases/</url>
+	      <url>http://18.204.207.226:8081/repository/wallmart-releases/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Snapshot Nexus Repository </name>
-	      <url>http://3.86.105.207:8081/repository/wallmart-snapshots/</url>
+	      <url>http://18.204.207.226:8081/repository/wallmart-snapshots/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
