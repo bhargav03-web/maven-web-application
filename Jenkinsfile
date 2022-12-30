@@ -1,6 +1,7 @@
 node
 {
     def mavenHome = tool name: "maven3.8.6"
+    properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5')), pipelineTriggers([pollSCM('* * * * *')])])
     
     stage('CheckoutCode')
     {
@@ -12,7 +13,7 @@ node
         sh "${mavenHome}/bin/mvn clean package"
     }
     
-    stage('ExecuteSonarQubeReport')
+   /* stage('ExecuteSonarQubeReport')
     {
         sh "${mavenHome}/bin/mvn sonar:sonar"
     }
@@ -28,6 +29,6 @@ node
         {
             sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@107.23.12.96:/opt/apache-tomcat-9.0.68/webapps/"
         }
-    }
+    } */
             
 }
